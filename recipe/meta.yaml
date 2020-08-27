@@ -1,5 +1,5 @@
 {% set name = "rbc" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/xnd-project/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 8bf1d089c2cf30466bd4de8bfab0147ddff7a14627368f1a0de74dda5e421663
+  sha256: bec232215f7b9d3151268bf29708193de1b0abaf80f419dd3477e1a200edfc47
 
 build:
   number: 0
