@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/xnd-project/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: bec232215f7b9d3151268bf29708193de1b0abaf80f419dd3477e1a200edfc47
+  sha256: a8fa92d78543431ce6e31f3900654af5a3de64abc93da7af7c097089909d898b
 
 build:
   number: 0
