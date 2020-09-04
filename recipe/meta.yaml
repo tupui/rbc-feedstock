@@ -1,5 +1,5 @@
 {% set name = "rbc" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xnd-project/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: a8fa92d78543431ce6e31f3900654af5a3de64abc93da7af7c097089909d898b
+  sha256: b4be59341bb3f9153b956b02a0e96dcaf0f198ca65662cd7e564113394a9d998
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py<35]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
