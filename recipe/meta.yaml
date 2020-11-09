@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xnd-project/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: b4be59341bb3f9153b956b02a0e96dcaf0f198ca65662cd7e564113394a9d998
+  sha256: b78dcc5bfd601dc8acc6cdc9b548cf2db53d00b86c7407a9ddd39f8f718cc514
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<35]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -28,6 +28,7 @@ requirements:
     - llvmlite >=0.29
     - numba
     - netifaces
+    - six
 
 test:
   requires:
