@@ -5,9 +5,13 @@ Home: https://github.com/xnd-project/rbc
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rbc-feedstock/blob/master/LICENSE.txt)
 
 Summary: RBC - Remote Backend Compiler
+
+Development: https://github.com/xnd-project/rbc
+
+Documentation: https://rbc.readthedocs.io/
 
 The aim of the Remote Backend Compiler project is to distribute
 the tasks of a program JIT compilation process to separate
