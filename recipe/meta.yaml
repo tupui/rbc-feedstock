@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xnd-project/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: ef37cf0fbf8b487616d7300675786f405862135b3c143323b2e0f76faa88ffb3
+  sha256: b1374b1752400b49582a9e6722636bcf9c28daa7d313f09ebcaa1610c9bbfc1c 
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<35]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -59,3 +59,4 @@ about:
 extra:
   recipe-maintainers:
     - pearu
+    - guilhermeleobas
