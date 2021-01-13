@@ -203,4 +203,5 @@ Feedstock Maintainers
 =====================
 
 * [@pearu](https://github.com/pearu/)
+* [@guilhermeleobas](https://github.com/guilhermeleobas/)
 
