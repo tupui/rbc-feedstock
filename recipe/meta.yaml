@@ -1,5 +1,5 @@
 {% set name = "rbc" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/xnd-project/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: b1374b1752400b49582a9e6722636bcf9c28daa7d313f09ebcaa1610c9bbfc1c 
+  sha256: a46f92d1e083b6ecdcd0e9d75a4d5726badebea39c66e7560c2d09aeac9959b1
 
 build:
-  number: 1
-  skip: True  # [py<35]
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  skip: true  # [py<35]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -44,7 +44,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'RBC - Remote Backend Compiler'
+  summary: RBC - Remote Backend Compiler
   description: |
     The aim of the Remote Backend Compiler project is to distribute
     the tasks of a program JIT compilation process to separate
