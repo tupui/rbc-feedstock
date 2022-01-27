@@ -19,11 +19,14 @@ build:
 requirements:
   build:
     - python
+    - {{ compiler('c') }}
   host:
+    - cffi
     - python
     - setuptools
     - pip
   run:
+    - cffi
     - python
     - thriftpy2
     - tblib
